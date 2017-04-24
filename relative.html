@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	  *{
+	  	margin:0;
+	  	padding:0;
+            text-align: center;
+	  }
+       ul  {
+            list-style: none;
+       }
+       a {
+            text-decoration:none;
+       }
+     
+      .tab {
+            width: 800px;
+            height: 50px;
+            background-color: #0cc;
+            margin:40px auto;
+          
+      }
+      .tab li {
+           float:left;
+           width: 160px;
+           height: 50px;
+           line-height: 50px;
+           text-align: center;
+      }
+      .tab a {
+            display:block;
+           
+      }
+      .tab li:hover{
+            border-top:5px solid #cc0;
+            position:relative;
+            top:-5px;
+            left:0;
+      }
+      .tab a:hover {
+            color:#fff;
+           
+      }
+      .txt {
+            width: 400px;
+            height: 200px;
+            line-height: 24px;
+            text-indent:2em;
+            padding: 10px;
+            margin: 0 auto;
+            margin-top:50px;
+            border: 1px solid #000;
+      }
+      .top {
+            position: relative;
+            top:-5px;
+            font-size:12px;
+            color:#f00;
+      }
+	</style>
+</head>
+<body>
+
+  
+      <ul class="tab"> 
+          <li><a href="" class="show">首页</a></li>
+          <li><a href="">首页</a></li>
+          <li><a href="">首页</a></li>
+          <li><a href="">首页</a></li>
+          <li><a href="">首页</a></li>
+      </ul>
+      <p>相对定位用于加标注:</p>
+      <p class="txt">这是一段文字<span class="top">[1]</span>，这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字，这是一段文字这是一段文字这是一段文字这是一段文字，这是一段文字<span class="top">[2]</span>，这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字<span class="top">[3]</span>，这是一段文字，这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字。</p>
+      
+     
+</body>
+</html>

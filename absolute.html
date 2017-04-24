@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>轮播图</title>
+	<style>
+     *{
+     	margin:0;
+     	padding:0;
+     }
+     ul,ol {
+     	list-style: none;
+     }
+     .carousel {
+     	position:relative;
+     	width: 440px;
+     	height: 543px;
+     	margin: 20px auto;
+     }
+     .pics li {
+     	position:absolute;
+     	left:0;
+     	top:0;
+     	display:none;
+     }
+     .pics .show {
+     	display: block;
+     }
+     .carousel span{
+     	position:absolute;
+     	width: 50px;
+     	height: 50px;
+     	cursor:pointer;
+        margin-top: -25px;
+     	color:#fff;
+     	font: 24px/50px "SimSun";
+     	text-align: center;
+     	border-radius:10px;
+        background: rgba(0,0,0,0.4);
+     }
+     .carousel span:hover {
+     	background: rgba(0,0,0,0.7);
+     }
+     .carousel span.left {
+     	left:10px;
+     	top: 50%;
+     }
+     .carousel span.right {
+        right:10px;
+        top:50%;
+     }
+     .carousel ol {
+     	position: absolute;
+     	bottom:40px;
+     	left:50%;
+     	margin-left:-72px;
+     	padding-left:8px;
+     	width: 144px;
+     	height: 16px;
+     }
+     .carousel ol li{
+     	float:left;
+     	width: 16px;
+     	height: 16px;
+     	font:14px/16px "Microsoft Yahei";
+     	color:#666;
+     	cursor:pointer;
+     	border-radius:16px;
+     	text-align: center;
+     	margin-right:8px;
+     	background: #fff;
+     }
+     .carousel ol li.current {
+       background: #f3fa7a;
+     }
+	</style>
+</head>
+<body>
+	<div class="carousel">
+		<ul class="pics">
+			<li class="show"><img src="images/2.jpg" alt=""></li>
+			<li><img src="images/1.jpg" alt=""></li>
+			<li><img src="images/3.jpg" alt=""></li>
+			<li><img src="images/4.jpg" alt=""></li>
+			<li><img src="images/5.jpg" alt=""></li>
+			<li><img src="images/6.jpg" alt=""></li>
+		</ul>
+		<span class="left">&lt;</span>
+		<span class="right">&gt;</span>
+		<ol>
+			<li class="current"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+	</div>
+</body>
+</html>

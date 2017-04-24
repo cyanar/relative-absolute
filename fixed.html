@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>固定定位</title>
+	<style>
+	 ul {
+        position:fixed;
+        bottom:100px;
+        right:20px;
+	 	list-style:none;
+	 }
+	 ul li {
+	 	width: 100px;
+	 	height: 30px;
+	 	background: #707070;
+	 	text-align: center;
+	 	margin-bottom:10px;
+	 	font: 14px/30px "Microsoft Yahei";
+	 }
+	 ul li a {
+	 	display: block;
+	 	text-decoration: none;
+	 	color:#fff;
+	 }
+     ul li a:hover {
+     	background: #bf0000;
+     }
+	 .txt {
+	 	width: 1000px;
+	 	height: 2000px;
+	 	margin:0 auto;	
+	 	background: #ccc;
+	 }
+	</style>
+</head>
+<body>
+	<div class="txt">
+		<a id="top">我是顶部</a>hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello </div>
+	<ul class="fixed">
+		<li><a href="">快速回复</a></li>
+		<li><a href="">我要收藏</a></li>
+		<li><a href="#top">返回顶部</a></li>
+	</ul>
+</body>
+</html>
