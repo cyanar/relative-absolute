@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>压盖效果</title>
+	<style>
+	 * {
+	 	margin:0;
+	 	padding:0;
+	 	font-family:"Microsoft Yahei";
+	 	color:#fff;
+	 }
+	 .box {
+	 	position:relative;
+	 	float:left;
+	 	width: 200px;
+	 	height: 200px;
+	 	margin-right:20px;
+	 }
+	 .mask {
+	 	position: absolute;
+	 	display: table;
+	 	left:0;
+	 	bottom:0;
+	 	width: 176px;
+	 	height: 44px;
+	 	padding:10px 12px;
+	 	background: rgba(0,0,0,.5);
+	 }
+	 .mask p {
+	 	display:table-cell;
+	 	vertical-align: middle;
+	 }
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="images/hot1.jpg" alt="">
+		<div class="mask">
+				<p>葫芦庙为什么会失火？</p>
+		</div>
+	
+	</div>
+	<div class="box">
+		<img src="images/hot2.jpg" alt="">
+		<div class="mask">
+			<p>孙悟空的金箍棒有何特别之处？</p>
+		</div>
+		
+	</div>
+
+</body>
+</html>
